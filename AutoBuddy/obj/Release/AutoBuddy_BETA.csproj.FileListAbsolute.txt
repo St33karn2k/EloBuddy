@@ -1,0 +1,13 @@
+D:\EloBuddy 작업\AutoBuddy\bin\Release\AutoBuddy.exe.config
+D:\EloBuddy 작업\AutoBuddy\bin\Release\AutoBuddy.exe
+D:\EloBuddy 작업\AutoBuddy\bin\Release\AutoBuddy.pdb
+D:\EloBuddy 작업\AutoBuddy\bin\Release\EloBuddy.dll
+D:\EloBuddy 작업\AutoBuddy\bin\Release\EloBuddy.SDK.dll
+D:\EloBuddy 작업\AutoBuddy\bin\Release\Newtonsoft.Json.dll
+D:\EloBuddy 작업\AutoBuddy\bin\Release\SharpDX.Direct3D9.dll
+D:\EloBuddy 작업\AutoBuddy\bin\Release\SharpDX.dll
+D:\EloBuddy 작업\AutoBuddy\obj\Release\AutoBuddy_BETA.csprojResolveAssemblyReference.cache
+D:\EloBuddy 작업\AutoBuddy\obj\Release\AutoBuddy.Properties.Resources.resources
+D:\EloBuddy 작업\AutoBuddy\obj\Release\AutoBuddy_BETA.csproj.GenerateResource.Cache
+D:\EloBuddy 작업\AutoBuddy\obj\Release\AutoBuddy.exe
+D:\EloBuddy 작업\AutoBuddy\obj\Release\AutoBuddy.pdb
