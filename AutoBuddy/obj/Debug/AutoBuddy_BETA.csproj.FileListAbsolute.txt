@@ -1,3 +1,4 @@
 D:\EloBuddy 작업\AutoBuddy_BETA\bin\Debug\AutoBuddy.exe.config
 D:\EloBuddy 작업\AutoBuddy\bin\Debug\AutoBuddy.exe.config
 D:\EloBuddy 작업\EloBuddy\AutoBuddy\bin\Release\AutoBuddy.exe.config
+D:\EloBuddy 작업\EloBuddy\AutoBuddy\bin\Release\AutoBuddy Edited.exe.config
