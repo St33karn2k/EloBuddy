@@ -191,7 +191,7 @@ Environment.SpecialFolder.ApplicationData), "AutoBuddy\\qPred600"), "cassQ600");
                 dmg = dm + ", " + (t.Health - dm);
             }
 
-            if (isTearOwned && Q.IsReady() && AutoWalker.p.ManaPercent > 95 && !AutoWalker.Recalling() && !EntityManager.Heroes.Enemies.Any(en => en.Distance(AutoWalker.p) < 2000) && !EntityManager.MinionsAndMonsters.EnemyMinions.Any(min => min.Distance(AutoWalker.p) < 1000))
+            if (isTearOwned && Q.IsReady() && AutoWalker.p.ManaPercent > 95 && !AutoWalker.Recalling() && !RecallBlock.Recalling && !EntityManager.Heroes.Enemies.Any(en => en.Distance(AutoWalker.p) < 2000) && !EntityManager.MinionsAndMonsters.EnemyMinions.Any(min => min.Distance(AutoWalker.p) < 1000))
             {
 
                 QCast(null, new Vector3());

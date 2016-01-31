@@ -10,6 +10,10 @@ using SharpDX;
 
 namespace AutoBuddy.MainLogics
 {
+    public static class RecallBlock
+    {
+        public static bool Recalling = false;
+    }
     internal class Recall
     {
         private readonly Slider flatGold, goldPerLevel;
@@ -80,6 +84,7 @@ AutoBuddy won't recall if you have less gold than needed for next item.
         {
             if (active) return;
             active = true;
+            RecallBlock.Recalling = true;
             g = null;
             Game.OnTick += Game_OnTick;
         }
@@ -88,6 +93,7 @@ AutoBuddy won't recall if you have less gold than needed for next item.
         {
             lastRecallTime = 0;
             active = false;
+            RecallBlock.Recalling = false;
             Game.OnTick -= Game_OnTick;
         }
 
@@ -132,6 +138,7 @@ AutoBuddy won't recall if you have less gold than needed for next item.
 
                 if ((!AutoWalker.p.IsMoving && ObjectManager.Player.Distance(recallPos) < Orbwalker.HoldRadius + 30) || (AutoWalker.p.IsMoving && ObjectManager.Player.Distance(recallPos) < 30))
                 {
+                    RecallBlock.Recalling = true;
                     CastRecall();
                 }
                 else
@@ -143,7 +150,7 @@ AutoBuddy won't recall if you have less gold than needed for next item.
         {
             if (Game.Time < lastRecallTime || AutoWalker.Recalling() || ObjectManager.Player.Distance(spawn) < 500) return;
             lastRecallTime = Game.Time + 2f;
-            Core.DelayAction(CastRecall2, 3000);
+            Core.DelayAction(CastRecall2, 3500);
         }
         private void CastRecall2()//Kappa
         {
@@ -153,6 +160,7 @@ AutoBuddy won't recall if you have less gold than needed for next item.
             ObjectManager.Player.Spellbook.CastSpell(SpellSlot.Recall);
             ObjectManager.Player.Spellbook.CastSpell(SpellSlot.Recall);
             ObjectManager.Player.Spellbook.CastSpell(SpellSlot.Recall);
+            RecallBlock.Recalling = false;
         }
     }
 }
